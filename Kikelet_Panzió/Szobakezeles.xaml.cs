@@ -37,6 +37,7 @@ namespace Kikelet_Panzió
 
         private void dgrSzobak_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
             mutatottszoba = MainWindow.szobak[dgrSzobak.SelectedIndex];
             DataContext = mutatottszoba;
 
@@ -92,5 +93,6 @@ namespace Kikelet_Panzió
 
 
         }
+
     }
 }
