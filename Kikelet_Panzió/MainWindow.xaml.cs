@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,27 +33,33 @@ namespace Kikelet_Panzió
             Random random = new Random();
             for (int i = 1; i <=100; i++)
             {
-                string mettol = DatumCsinalo(random);
-                string meddig = DatumCsinalo(random);
+                DateTime mettol = DatumCsinalo(random);
+                DateTime meddig = DatumCsinalo(random);
 
-                while (new DateTime(int.Parse(meddig.Split('.')[0]), int.Parse(meddig.Split('.')[1]), int.Parse(meddig.Split('.')[2])) < 
-                    new DateTime(int.Parse(mettol.Split('.')[0]), int.Parse(mettol.Split('.')[1]), int.Parse(mettol.Split('.')[2])))
+                while (meddig < mettol)
                 {
                     meddig = DatumCsinalo(random);
                 }
-                szobak.Add(new Szoba(Convert.ToString(i), random.Next(1, 7), random.Next(6000, 12001), Convert.ToBoolean(random.Next(0, 2)), mettol, meddig));
+                szobak.Add(new Szoba(Convert.ToString(i), random.Next(1, 7), random.Next(6000, 12001), Convert.ToBoolean(random.Next(0, 2)), $"{mettol.Year}.{mettol.Month}.{mettol.Day}", $"{meddig.Year}.{meddig.Month}.{meddig.Day}"));
             }
         }
 
-        private static string  DatumCsinalo(Random random)
+        private static DateTime  DatumCsinalo(Random random)
         {
-            string honap = Convert.ToString(random.Next(1, 13));
-            string nap = Convert.ToString(random.Next(1, 32));
-            if (honap.Length <= 1)
-                honap = "0" + honap;
-            if (nap.Length <= 1)
-                nap = "0" + nap;
-            string datum = $"{random.Next(2000, 2026)}.{honap}.{nap}";
+            int ev = random.Next(2023, 2026);
+            int honap = random.Next(1, 13);
+            int nap = random.Next(1, 31);
+            DateTime datum;
+
+            while (DateTime.TryParse($"{ev}.{honap}.{nap}", out datum) == false)
+            {
+                ev = random.Next(2023, 2026);
+                honap = random.Next(1, 13);
+                nap = random.Next(1, 31);
+            }
+            DateTime.TryParse($"{ev}.{honap}.{nap}", out datum);
+
+
             return datum;
         }
 
