@@ -33,14 +33,22 @@ namespace Kikelet_Panzió
             Random random = new Random();
             for (int i = 1; i <=100; i++)
             {
-                DateTime mettol = DatumCsinalo(random);
-                DateTime meddig = DatumCsinalo(random);
-
-                while (meddig < mettol)
+                string mettolStr = "";
+                string meddigStr = "";
+                bool foglalt = Convert.ToBoolean(random.Next(0, 2));
+                if (foglalt)
                 {
-                    meddig = DatumCsinalo(random);
+                    DateTime mettol = DatumCsinalo(random);
+                    DateTime meddig = DatumCsinalo(random);
+                    while (meddig < mettol)
+                    {
+                        meddig = DatumCsinalo(random);
+                    }
+                    mettolStr = $"{mettol.Year}.{mettol.Month}.{mettol.Day}";
+                    meddigStr = $"{meddig.Year}.{meddig.Month}.{meddig.Day}";
                 }
-                szobak.Add(new Szoba(Convert.ToString(i), random.Next(1, 7), random.Next(6000, 12001), Convert.ToBoolean(random.Next(0, 2)), $"{mettol.Year}.{mettol.Month}.{mettol.Day}", $"{meddig.Year}.{meddig.Month}.{meddig.Day}"));
+   
+                szobak.Add(new Szoba(Convert.ToString(i), random.Next(1, 7), random.Next(6000, 12001), foglalt, mettolStr, meddigStr));
             }
         }
 
@@ -58,7 +66,6 @@ namespace Kikelet_Panzió
                 nap = random.Next(1, 31);
             }
             DateTime.TryParse($"{ev}.{honap}.{nap}", out datum);
-
 
             return datum;
         }
