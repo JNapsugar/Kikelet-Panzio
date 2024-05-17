@@ -1,25 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Kikelet_Panzió
 {
-    internal class Szoba
+    public class Szoba
     {
-        int szobaszam { get; }
-        int ferohelyek { get; set; }
-        int ar { get; set; }
+        public string Szobaszam { get; }
+        public int Ferohelyek { get; set; }
+        public int Ar { get; set; }
+        public bool Foglalt { get; set; }
+        public string Mettol { get; set; }
+        public string Meddig { get; set; }
 
-        public Szoba(int szobaszam, int ferohelyek, int ar)
+        public Szoba(string szobaszam, int ferohelyek, int ar, bool foglalt, string mettol, string meddig)
         {
-            this.szobaszam = szobaszam;
-            this.ferohelyek = ferohelyek;
-            this.ar = ar;
+            this.Szobaszam = szobaszam;
+            this.Ferohelyek = ferohelyek;
+            this.Ar = ar;
+            this.Foglalt = foglalt;
+            this.Mettol = mettol;
+            this.Meddig = meddig;
         }
 
-
+        public override string? ToString()
+        {
+            return $"{Szobaszam} {Ferohelyek} {Ar} {Foglalt} {Mettol} {Meddig}";
+        }
     }
 
 }
