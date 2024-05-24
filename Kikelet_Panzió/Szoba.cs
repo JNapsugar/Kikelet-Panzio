@@ -26,10 +26,6 @@ namespace Kikelet_Panzió
             this.Meddig = meddig;
         }
 
-        public override string? ToString()
-        {
-            return $"{Szobaszam} {Ferohelyek} {Ar} {Foglalt} {Mettol} {Meddig}";
-        }
     }
 
 }

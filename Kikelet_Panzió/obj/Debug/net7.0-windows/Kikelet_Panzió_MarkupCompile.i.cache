@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\App.xaml
-2-891346540
+51334364600
 
-72072786914
+111229771845
 1981871740104
-MainWindow.xaml;Szobakezeles.xaml;
+Bejelentkezes.xaml;MainWindow.xaml;Regisztracio.xaml;Szobafoglalas.xaml;Szobakezeles.xaml;
 
 True
 

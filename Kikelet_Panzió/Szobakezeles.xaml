@@ -24,7 +24,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label Content="Kikelet Panzió"  FontSize="35" FontFamily="Vivaldi"></Label>
+        <Label Content="Kikelet Panzió - Szobák"  FontSize="35" FontFamily="Vivaldi"></Label>
         <Button Name="btnVissza" Content="Vissza" Background="LightYellow" FontFamily="Times New Roman" Grid.Column="1" Height="30" Width="60" HorizontalAlignment="Right" Margin="15,0" Click="btnVissza_Click"></Button>
         <DataGrid Name="dgrSzobak" Grid.Row="1" Background="Beige" SelectionChanged="dgrSzobak_SelectionChanged"></DataGrid>
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="30,0">
@@ -47,8 +47,9 @@
                 <Label Content="Eddig:" Margin="170,0,0,0" VerticalAlignment="Center"></Label>
                 <TextBox Name="txbEddig" IsEnabled="False" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Meddig, Mode = OneWay}"></TextBox>
             </DockPanel>
-            <DockPanel>
-                <Button></Button>
+            <DockPanel HorizontalAlignment="Center">
+                <Button Name="btnMentes" Content="Mentés" Width="120" Height="35" Margin="10,20" Click="btnMentes_Click"></Button>
+                <Button Name="btnSzobaFelvitel" Content="Új szoba felvitele" Width="120" Height="35" Margin="10,20" Click="btnSzobaFelvitel_Click"></Button>
             </DockPanel>
 
         </StackPanel>

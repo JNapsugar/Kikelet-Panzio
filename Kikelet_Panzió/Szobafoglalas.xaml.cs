@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace Kikelet_Panzió
+{
+    /// <summary>
+    /// Interaction logic for Szobafoglalas.xaml
+    /// </summary>
+    public partial class Szobafoglalas : Window
+    {
+        Szoba valasztottszoba;
+        public Szobafoglalas()
+        {
+            InitializeComponent();
+        }
+
+        private void dgrSzobak_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            valasztottszoba = MainWindow.szobak[dgrSzobak.SelectedIndex];
+            DataContext = valasztottszoba;
+
+        }
+    }
+}

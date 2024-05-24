@@ -24,8 +24,14 @@ namespace Kikelet_Panzió
     
     public partial class MainWindow : Window
     {
-        Szobakezeles szobakezelesAblak;
+
+        Szobakezeles SzobakezelesAblak;
+        Regisztracio RegisztracioAblak;
+        Bejelentkezes BejelentkezesAblak;
+        public static Ugyfel belepettUgyfel;
         public static List<Szoba> szobak = new List<Szoba>();
+        public static List<Ugyfel> ugyfelek = new List<Ugyfel>();
+        public static List<string> ugyfelAzonositok = new List<string>();
         public MainWindow()
         {
             InitializeComponent();
@@ -72,8 +78,20 @@ namespace Kikelet_Panzió
 
         private void btnSzobakezeles_Click(object sender, RoutedEventArgs e)
         {
-            szobakezelesAblak = new Szobakezeles();
-            szobakezelesAblak.ShowDialog();
+            SzobakezelesAblak = new Szobakezeles();
+            SzobakezelesAblak.ShowDialog();
+        }
+
+        private void btnRegisztracio_Click(object sender, RoutedEventArgs e)
+        {
+            RegisztracioAblak = new Regisztracio();
+            RegisztracioAblak.ShowDialog();
+        }
+
+        private void btnFoglalas_Click(object sender, RoutedEventArgs e)
+        {
+            BejelentkezesAblak = new Bejelentkezes();
+            BejelentkezesAblak.ShowDialog();
         }
     }
 }

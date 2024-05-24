@@ -21,3 +21,9 @@ C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Kikelet_Panzió.pdb
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Kikelet_Panzió.genruntimeconfig.cache
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\ref\Kikelet_Panzió.dll
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Regisztracio.g.cs
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Regisztracio.baml
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Bejelentkezes.g.cs
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Szobafoglalas.g.cs
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Bejelentkezes.baml
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Szobafoglalas.baml

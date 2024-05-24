@@ -1,0 +1,40 @@
+﻿<Window x:Class="Kikelet_Panzió.Bejelentkezes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kikelet_Panzió"
+        mc:Ignorable="d"
+        Title="Bejelentkezés" Height="400" Width="380">
+    <Window.Resources>
+        <Style TargetType="DockPanel">
+            <Setter Property="Margin" Value="0,5"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="50,0,0,0"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,50,0"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="LightSteelBlue">
+        <StackPanel>
+            <Button Name="btnVissza" Content="Vissza" Background="LightYellow" FontFamily="Times New Roman" Grid.Column="1" Height="30" Width="60" HorizontalAlignment="Right" Margin="10,6" Click="btnVissza_Click"></Button>
+            <Label Content="Kikelet Panzió"  FontSize="35" FontFamily="Vivaldi" HorizontalAlignment="Center" Margin="0"></Label>
+            <Label Content="Bejelentkezés"  FontSize="30" FontFamily="Vivaldi" HorizontalAlignment="Center" Margin="0,0,0,20"></Label>
+            <DockPanel>
+                <Label Content="Név:"></Label>
+                <TextBox Name="txbNev"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Jelszó:"></Label>
+                <TextBox Name="txbJelszo"></TextBox>
+            </DockPanel>
+
+            <Button Name="btnRegisztracio" Content="Bejelentkezés" Background="LightYellow" Width="100" Height="40" Margin="30" Click="btnBejelentkezes_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

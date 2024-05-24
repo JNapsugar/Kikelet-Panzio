@@ -7,12 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Bejelentkezes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Regisztracio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Szobafoglalas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Szobakezeles.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Bejelentkezes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Regisztracio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Szobafoglalas.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Szobakezeles.xaml">

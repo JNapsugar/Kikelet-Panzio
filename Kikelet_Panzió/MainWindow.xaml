@@ -20,8 +20,8 @@
         <Label Content="Kikelet Panzió" HorizontalAlignment="Center" Margin="50" FontSize="50" FontFamily="Vivaldi"></Label>
         <DockPanel HorizontalAlignment="Center">
             <Button Content="Szobák kezelése" Name="btnSzobakezeles" Click="btnSzobakezeles_Click"></Button>
-            <Button Content="Regisztráció" Name="btnRegisztracio"></Button>
-            <Button Content="Szobafoglalás" Name="btnFoglalas"></Button>
+            <Button Content="Regisztráció" Name="btnRegisztracio" Click="btnRegisztracio_Click"></Button>
+            <Button Content="Szobafoglalás" Name="btnFoglalas" Click="btnFoglalas_Click"></Button>
             <Button Content="Statisztikák" Name="btnStatisztikak"></Button>
         </DockPanel>
     </StackPanel>

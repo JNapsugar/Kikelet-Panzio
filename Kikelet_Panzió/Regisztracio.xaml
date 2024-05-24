@@ -1,0 +1,53 @@
+﻿<Window x:Class="Kikelet_Panzió.Regisztracio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kikelet_Panzió"
+        mc:Ignorable="d"
+        Title="Regisztáció" Height="550" Width="420">
+    <Window.Resources>
+        <Style TargetType="DockPanel">
+            <Setter Property="Margin" Value="0,5"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="50,0,0,0"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,50,0"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="LightSteelBlue">
+        <StackPanel>
+            <Button Name="btnVissza" Content="Vissza" Background="LightYellow" FontFamily="Times New Roman" Grid.Column="1" Height="30" Width="60" HorizontalAlignment="Right" Margin="10,6" Click="btnVissza_Click"></Button>
+            <Label Content="Kikelet Panzió"  FontSize="35" FontFamily="Vivaldi" HorizontalAlignment="Center" Margin="0"></Label>
+            <Label Content="Regisztráció"  FontSize="30" FontFamily="Vivaldi" HorizontalAlignment="Center" Margin="0,0,0,20"></Label>
+            <DockPanel>
+                <Label Content="Név:"></Label>
+                <TextBox Name="txbNev"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Születési dátum:"></Label>
+                <TextBox Name="txbSzületes"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Email cím:"></Label>
+                <TextBox Name="txbEmail"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Jelszó:"></Label>
+                <TextBox Name="txbJelszo"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Szeretne VIP ügyfél lenni?"></Label>
+                <CheckBox VerticalAlignment="Center" Name="cbxVIP"></CheckBox>
+            </DockPanel>
+            <Label Content="A VIP ügyfél 3% kedvezményre jogosult az árból" FontStyle="Italic"></Label>
+            <Label Content="és hírlevelet kap negyedévente." FontStyle="Italic"></Label>
+            <Button Name="btnRegisztracio" Content="Regisztráció" Background="LightYellow" Width="100" Height="40" Margin="30" Click="btnRegisztracio_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
