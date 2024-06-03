@@ -1,0 +1,45 @@
+﻿<Window x:Class="Kikelet_Panzió.Statisztikak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kikelet_Panzió"
+        mc:Ignorable="d"
+        Title="Statisztikak" Height="450" Width="1100">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="LightSteelBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="Kikelet Panzió - Sztatisztikák"  FontSize="35" FontFamily="Vivaldi" Grid.ColumnSpan="2" Margin="0,5,0,5" Width="525" HorizontalAlignment="Left"></Label>
+        <Button Name="btnVissza" Content="Vissza" Background="LightYellow" FontFamily="Times New Roman" Grid.Column="1" Height="30" Width="60" HorizontalAlignment="Right" Margin="15,0" Click="btnVissza_Click"></Button>
+        <StackPanel Grid.Row="2">
+            <Label Name="lblLegtobbet" Content="Legtöbbet kiadott szoba: "  Margin="20,50,0,0"></Label>
+            <Label Name="lblBevetel" Content="Bevétel: "  Margin="20,20,0,0"></Label>
+            <Label Name="lblOsszes" Content="Összes: "  Margin="20,10,0,0" FontSize="15"></Label>
+            <Label Name="lblIdoszakos" Content="Időszakon belüli: "  Margin="20,10,0,0" FontSize="15"></Label>
+            <DockPanel HorizontalAlignment="Center">
+                <TextBox Name="txbEttol" Width="100" Height="30"></TextBox>
+                <Label Content="-"></Label>
+                <TextBox Name="txbEddig" Width="100" Height="30"></TextBox>
+            </DockPanel>
+            <Button Name="btnSzamitas" Content="Számítás" Width="100" Height="30" Margin="10" Click="btnSzamitas_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2">
+            <Label Content="Visszatérő vendégek"></Label>
+            <DataGrid Name="dgrVisszaterok" Height="350"></DataGrid>
+        </StackPanel>
+
+    </Grid>
+</Window>

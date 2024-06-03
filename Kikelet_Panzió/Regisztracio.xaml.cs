@@ -66,7 +66,7 @@ namespace Kikelet_Panzió
 
             if (megfelelo)
             {
-                MainWindow.ugyfelek.Add(new Ugyfel(ugyfelAzonosito,txbNev.Text, txbSzületes.Text, txbEmail.Text.ToLower(), txbJelszo.Text, Convert.ToBoolean(cbxVIP.IsChecked)));
+                MainWindow.ugyfelek.Add(new Ugyfel(ugyfelAzonosito,txbNev.Text, txbSzületes.Text, txbEmail.Text.ToLower(), txbJelszo.Text, Convert.ToBoolean(cbxVIP.IsChecked), false, 0));
                 MainWindow.ugyfelAzonositok.Add(ugyfelAzonosito);
                 MessageBox.Show("Sikeres regisztráció");
                 Close();

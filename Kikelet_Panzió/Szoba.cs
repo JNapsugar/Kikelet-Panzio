@@ -15,8 +15,10 @@ namespace Kikelet_Panzió
         public bool Foglalt { get; set; }
         public string Mettol { get; set; }
         public string Meddig { get; set; }
+        public int Kiadasok { get; set; }
+        public int FoglaltFo { get; set; }
 
-        public Szoba(string szobaszam, int ferohelyek, int ar, bool foglalt, string mettol, string meddig)
+        public Szoba(string szobaszam, int ferohelyek, int ar, bool foglalt, string mettol, string meddig, int kiadasok, int foglaltFo)
         {
             this.Szobaszam = szobaszam;
             this.Ferohelyek = ferohelyek;
@@ -24,6 +26,8 @@ namespace Kikelet_Panzió
             this.Foglalt = foglalt;
             this.Mettol = mettol;
             this.Meddig = meddig;
+            Kiadasok = kiadasok;
+            FoglaltFo = foglaltFo;
         }
 
     }

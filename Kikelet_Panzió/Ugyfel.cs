@@ -14,8 +14,10 @@ namespace Kikelet_Panzió
         public string Email { get; set; }
         public string Jelszo { get; set; }
         public bool VIP { get; set; }
+        public bool Visszajaro { get; set; }
+        public int Fizetett { get; set; }
 
-        public Ugyfel(string azonosito, string nev, string szuletes, string email, string jelszo, bool vIP)
+        public Ugyfel(string azonosito, string nev, string szuletes, string email, string jelszo, bool vIP, bool visszajaro, int fizetett)
         {
             Azonosito = azonosito;
             Nev = nev;
@@ -23,6 +25,8 @@ namespace Kikelet_Panzió
             Email = email;
             Jelszo = jelszo;
             VIP = vIP;
+            Visszajaro = visszajaro;
+            Fizetett = fizetett;
         }
 
         public override string? ToString()

@@ -69,7 +69,7 @@ namespace Kikelet_Panzió
             cbxFoglalt.IsChecked = false;
             txbEttol.Text = "";
             txbEddig.Text = "";
-            Szoba ujSzoba = new Szoba(Convert.ToString(MainWindow.szobak.Count + 1), 0, 0, false, "", "");
+            Szoba ujSzoba = new Szoba(Convert.ToString(MainWindow.szobak.Count + 1), 0, 0, false, "", "",0,0);
             mutatottszoba = ujSzoba;
             RagEldonto(mutatottszoba);
             ujszoba = true;

@@ -27,3 +27,5 @@ C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Szobafoglalas.g.cs
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Bejelentkezes.baml
 C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Szobafoglalas.baml
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Statisztikak.g.cs
+C:\Users\jnapsugár\source\repos\Kikelet_Panzió\Kikelet_Panzió\obj\Debug\net7.0-windows\Statisztikak.baml

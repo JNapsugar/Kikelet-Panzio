@@ -13,6 +13,9 @@
     <Compile Update="Regisztracio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Statisztikak.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Szobafoglalas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Regisztracio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Statisztikak.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Szobafoglalas.xaml">
