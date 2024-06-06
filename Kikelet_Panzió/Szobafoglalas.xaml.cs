@@ -37,7 +37,7 @@ namespace Kikelet_Panzió
                                     new DateTime(int.Parse(txbEttol.Text.Split('.')[0]), int.Parse(txbEttol.Text.Split('.')[1]), int.Parse(txbEttol.Text.Split('.')[2]));
 
             lblFizetendo.Content = MainWindow.belepettUgyfel.VIP? 
-                    (int.Parse(cmbFerohelyek.SelectedValue as string) * valasztottszoba.Ar) * napok.Days *0.97 + "Ft":
+                    Math.Round((int.Parse(cmbFerohelyek.SelectedValue as string) * valasztottszoba.Ar) * napok.Days * 0.97) + "Ft":
                     (int.Parse(cmbFerohelyek.SelectedValue as string) * valasztottszoba.Ar) * napok.Days  + "Ft";
 
             }
@@ -85,7 +85,7 @@ namespace Kikelet_Panzió
             MainWindow.szobak[dgrSzobak.SelectedIndex].Kiadasok ++;
             MainWindow.belepettUgyfel.Visszajaro = true;
             MainWindow.belepettUgyfel.Fizetett = MainWindow.belepettUgyfel.VIP ?
-                    int.Parse((int.Parse(cmbFerohelyek.SelectedValue as string) * valasztottszoba.Ar) * napok.Days * 0.97 +"") :
+                    int.Parse(Math.Round((int.Parse(cmbFerohelyek.SelectedValue as string) * valasztottszoba.Ar) * napok.Days * 0.97) + "") :
                     int.Parse((int.Parse(cmbFerohelyek.SelectedValue as string) * valasztottszoba.Ar) * napok.Days+"");
             MessageBox.Show("Sikeres foglalás");
             Close();

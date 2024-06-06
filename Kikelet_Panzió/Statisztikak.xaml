@@ -30,9 +30,9 @@
             <Label Name="lblOsszes" Content="Összes: "  Margin="20,10,0,0" FontSize="15"></Label>
             <Label Name="lblIdoszakos" Content="Időszakon belüli: "  Margin="20,10,0,0" FontSize="15"></Label>
             <DockPanel HorizontalAlignment="Center">
-                <TextBox Name="txbEttol" Width="100" Height="30"></TextBox>
+                <TextBox Name="txbEttol" Width="100" Height="30" VerticalContentAlignment="Center"></TextBox>
                 <Label Content="-"></Label>
-                <TextBox Name="txbEddig" Width="100" Height="30"></TextBox>
+                <TextBox Name="txbEddig" Width="100" Height="30" VerticalContentAlignment="Center"></TextBox>
             </DockPanel>
             <Button Name="btnSzamitas" Content="Számítás" Width="100" Height="30" Margin="10" Click="btnSzamitas_Click"></Button>
         </StackPanel>

@@ -69,7 +69,6 @@ namespace Kikelet_Panzió
                     new DateTime(int.Parse(txbEddig.Text.Split('.')[0]), int.Parse(txbEddig.Text.Split('.')[1]), int.Parse(txbEddig.Text.Split('.')[2]))
                     )
                 {
-                    MessageBox.Show(item.ToString());
                     TimeSpan napok = new DateTime(int.Parse(item.Meddig.Split('.')[0]), int.Parse(item.Meddig.Split('.')[1]), int.Parse(item.Meddig.Split('.')[2])) -
                                     new DateTime(int.Parse(item.Mettol.Split('.')[0]), int.Parse(item.Mettol.Split('.')[1]), int.Parse(item.Mettol.Split('.')[2]));
                     bevetel += item.Ferohelyek * item.Ar * napok.Days;

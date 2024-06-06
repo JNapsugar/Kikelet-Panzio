@@ -45,7 +45,7 @@ namespace Kikelet_Panzió
             InitializeComponent();
             Random random = new Random();
 
-
+            //Ugyfél generálás
             ugyfelek.Add(new Ugyfel($"Teszt{DateTime.Today.Year}{DateTime.Today.Month}{DateTime.Today.Day}", "Teszt", "2000.01.01", "email@gmail.com", "jelszo", true, true, 55000));
             string[] nevek = {"Gavin Wilkins", "Tracey Gibson", "Justin Randall", "Piers Wilkins","Jason Dowd", "Jennifer Clarkson", "Jessica Hudson", "Diane Greene", "Peter Ross", "Dan Lambert", "Gavin Bond", "Jason Davidson", "Gordon Miller" };
             foreach (var item in nevek)
@@ -61,7 +61,7 @@ namespace Kikelet_Panzió
                         random.Next(6000, 9999999)));
             }
 
-
+            //Szoba generálás
             for (int i = 1; i <=100; i++)
             {
                 string mettolStr = "";
@@ -97,6 +97,8 @@ namespace Kikelet_Panzió
             DateTime.TryParse($"{ev}.{honap}.{nap}", out datum);
             return datum;
         }
+
+        //Gombok
         private void btnSzobakezeles_Click(object sender, RoutedEventArgs e)
         {
             SzobakezelesAblak = new Szobakezeles();

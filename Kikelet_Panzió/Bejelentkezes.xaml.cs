@@ -39,7 +39,7 @@ namespace Kikelet_Panzió
                 i++;
             }
 
-            if (i == MainWindow.ugyfelek.Count || MainWindow.ugyfelek[i].Jelszo != txbJelszo.Text)
+            if (i == MainWindow.ugyfelek.Count || MainWindow.ugyfelek[i].Jelszo != txbJelszo.Password)
             {
                 MessageBox.Show("Nem megfelelő bejelentkezési adatok");
             }

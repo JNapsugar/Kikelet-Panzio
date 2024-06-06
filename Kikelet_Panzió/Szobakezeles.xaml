@@ -35,17 +35,17 @@
             </DockPanel>
             <DockPanel>
                 <Label Content="Aktuális ár 1fő/1éjszaka"></Label>
-                <TextBox Name="txbAr" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Ar, Mode = OneWay}"></TextBox>
+                <TextBox Name="txbAr" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Ar, Mode = OneWay}" VerticalContentAlignment="Center"></TextBox>
             </DockPanel>
             <DockPanel Margin="0,20,0,0">
                 <Label Content="Foglaltság:"></Label>
                 <CheckBox Name="cbxFoglalt" VerticalAlignment="Center" HorizontalAlignment="Left" IsChecked="{Binding Foglalt, Mode = OneWay}"></CheckBox>
                 <Label Content="Ettől:" Margin="60,0,0,0" VerticalAlignment="Center"></Label>
-                <TextBox Name="txbEttol" IsEnabled="False" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Mettol, Mode = OneWay}"></TextBox>
+                <TextBox Name="txbEttol" IsEnabled="False" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Mettol, Mode = OneWay}" VerticalContentAlignment="Center"></TextBox>
             </DockPanel>
             <DockPanel>
                 <Label Content="Eddig:" Margin="170,0,0,0" VerticalAlignment="Center"></Label>
-                <TextBox Name="txbEddig" IsEnabled="False" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Meddig, Mode = OneWay}"></TextBox>
+                <TextBox Name="txbEddig" IsEnabled="False" Width="100" HorizontalAlignment="Right" Height="30" Text="{Binding Meddig, Mode = OneWay}" VerticalContentAlignment="Center"></TextBox>
             </DockPanel>
             <DockPanel HorizontalAlignment="Center">
                 <Button Name="btnMentes" Content="Mentés" Width="120" Height="35" Margin="10,20" Click="btnMentes_Click"></Button>

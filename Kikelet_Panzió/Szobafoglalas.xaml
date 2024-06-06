@@ -34,11 +34,11 @@
             </DockPanel>
             <DockPanel>
                 <Label Content="Ettől:" VerticalAlignment="Center"></Label>
-                <TextBox Name="txbEttol" Width="120" HorizontalAlignment="Right" Height="30" TextChanged="txbEttol_TextChanged" ></TextBox>
+                <TextBox Name="txbEttol" Width="120" HorizontalAlignment="Right" Height="30" TextChanged="txbEttol_TextChanged" VerticalContentAlignment="Center"></TextBox>
             </DockPanel>
             <DockPanel>
                 <Label Content="Eddig:"  VerticalAlignment="Center"></Label>
-                <TextBox Name="txbEddig" Width="120" HorizontalAlignment="Right" Height="30" TextChanged="txbEddig_TextChanged"></TextBox>
+                <TextBox Name="txbEddig" Width="120" HorizontalAlignment="Right" Height="30" TextChanged="txbEddig_TextChanged" VerticalContentAlignment="Center"></TextBox>
             </DockPanel>
             <DockPanel>
                 <Label Content="Fizetendő összeg"  VerticalAlignment="Center"></Label>

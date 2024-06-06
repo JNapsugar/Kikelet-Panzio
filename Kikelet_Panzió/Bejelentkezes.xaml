@@ -18,6 +18,14 @@
             <Setter Property="Width" Value="200"></Setter>
             <Setter Property="Height" Value="30"></Setter>
             <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Margin" Value="0,0,50,0"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
         </Style>
     </Window.Resources>
     <Grid Background="LightSteelBlue">
@@ -31,7 +39,7 @@
             </DockPanel>
             <DockPanel>
                 <Label Content="Jelszó:"></Label>
-                <TextBox Name="txbJelszo"></TextBox>
+                <PasswordBox Name="txbJelszo"></PasswordBox>
             </DockPanel>
 
             <Button Name="btnRegisztracio" Content="Bejelentkezés" Background="LightYellow" Width="100" Height="40" Margin="30" Click="btnBejelentkezes_Click"></Button>
